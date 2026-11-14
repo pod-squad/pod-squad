@@ -38,7 +38,7 @@ def main():
         meta = {
             "name": f"Pod Squad #{tid}",
             "description": DESCRIPTION,
-            "image": "images/sealed-gift.webp",
+            "image": "https://pod-squad.github.io/pod-squad/images/sealed-gift.webp",
         }
         (SITE / "metadata" / f"{tid}.json").write_text(
             json.dumps(meta, indent=2, ensure_ascii=False) + "\n")

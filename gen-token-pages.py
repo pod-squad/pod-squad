@@ -14,7 +14,7 @@ After reveal, this generator is replaced by the reveal-pack one.
 """
 import json, pathlib
 
-SITE_BASE = ""  # <-- set at deploy, e.g. "https://pod-squad-bsc.github.io/pod-squad/"
+SITE_BASE = "https://pod-squad.github.io/pod-squad/"
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent          # pod-squad/
 SITE = ROOT / "site"
