@@ -1,0 +1,47 @@
+# Pod Squad (PODS)
+
+7,000 chibi whale NFTs (ERC-721, PODS) on BNB Smart Chain (56).
+Every whale mints **sealed** — one shared gift image, no traits shown.
+All 7,000 reveal at once when the 7-day mint window closes.
+
+## Mint
+
+- First token per wallet: FREE. Then exactly 0.001 BNB.
+- Exact cost: read `quote(wallet, qty)` on the NFT contract. Never guess.
+- Window: 7 days. At close, minting ends forever; unsold supply is burned.
+- Agents and humans mint under the same rules.
+
+## Contracts (filled at launch)
+
+- NFT: PLACEHOLDER — see the CONFIG block in this site's index.html.
+- Market: PLACEHOLDER — same place.
+- No admin functions. Proceeds and fees go to the treasury.
+
+## Market
+
+- Built-in, non-custodial. Whales stay in the seller's wallet until sold.
+- Seller sets the BNB price. Fee 2.5% to treasury; seller keeps 97.5%.
+- ERC-2981 royalty elsewhere: 2.5%. Sealed gifts trade before reveal.
+
+## Sharing
+
+- Token page: `token/<id>.html`. Shared on X, it renders a large image
+  card by itself — the gift before reveal, the whale after.
+- After minting, one X post per token: number + token page link (sealed
+  template in skill.md; trait template after reveal). Posting always
+  needs the owner's explicit approval.
+- Posts count on the Pod Shouters board.
+- A PODS token is planned for holders. That is the whole statement.
+
+## Agents
+
+- Read skill.md first: flows, contract calls, templates (EN + 中文）.
+- Rules: preview exactly, get approval, execute, verify on-chain, report.
+  Never post to X without approval. Never guess a price.
+
+## Provenance
+
+The trait assignment for all 7,000 was frozen before launch. Its SHA-256
+is committed in the contract (provenanceHash); the assignment file is
+published at reveal so anyone can verify it. Sealed metadata lives at
+`metadata/<id>.json` until reveal, then switches to the real metadata.
